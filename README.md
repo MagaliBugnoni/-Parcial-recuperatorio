@@ -6,3 +6,5 @@ Titulos y textos en color negro color: #333;
 Elementos usados 
 Boostrap para carrouserl, cards, y accordion (aca colocamos preguntas precuentes)
 style.css para dar estilo a inicio y contacto
+https://github.com/MagaliBugnoni/-Parcial-recuperatorio.git
+https://magalibugnoni.github.io/-Parcial-recuperatorio/
