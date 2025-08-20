@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto | Turismo Sustentable</title>
+
+  <!-- Bootstrap y Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+
+  <!-- Fuente -->
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet" />
+
+  
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Turismo Sustentable</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link active" href="#">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- FORMULARIO -->
+  <main class="container pt-5">
+    <section class="formulario-contacto">
+      <h2>Formulario de contacto para Reservas</h2>
+      <form class="contacto-form" novalidate>
+        <div class="mb-3">
+          <label for="nombre" class="form-label">Nombre completo:</label>
+          <input type="text" id="nombre" class="form-control" required minlength="3" placeholder="Escribí tu nombre completo" />
+        </div>
+
+        <div class="mb-3">
+          <label for="email" class="form-label">Correo electrónico:</label>
+          <input type="email" id="email" class="form-control" required placeholder="correo@ejemplo.com" />
+        </div>
+
+        <div class="mb-3">
+          <label for="destino" class="form-label">Destino de interés:</label>
+          <select id="destino" class="form-select" required>
+            <option value="">Elegí una opción</option>
+            <option value="playa">Playas paradisíacas</option>
+            <option value="nieve">Turismo de nieve</option>
+            <option value="trekking">Trekking y naturaleza</option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label for="mensaje" class="form-label">Mensaje:</label>
+          <textarea id="mensaje" class="form-control" rows="4" required minlength="10" placeholder="Escribí tu mensaje"></textarea>
+        </div>
+
+        <div class="text-center">
+          <button type="submit" class="btn btn-primary">
+            <i class="bi bi-envelope-fill"></i> Enviar
+          </button>
+        </div>
+      </form>
+    </section>
+
+    <!-- IMAGEN + VIDEO -->
+    <section class="media-contenido mt-5">
+      <h2 class="text-center">Turismo Responsable</h2>
+      <div class="text-center">
+        <img src="img/turismo_sostenible.jpg" alt="Paisaje turístico" class="img-fluid my-3 mx-auto d-block" />
+      </div>
+     
+    </section>
+
+    <!-- MAPA -->
+     <section>
+  <h2>¿Dónde estamos?</h2>
+  <div class="map-container">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.619094793672!2d-58.59605842338761!3d-34.56319845536091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb986a71f520b%3A0xaee3ced396c7fba8!2sInstituto%20Nuestra%20Se%C3%B1ora%20De%20Lujan%20Del%20Buen%20Viaje!5e0!3m2!1ses!2sar!4v1755632358954!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    
+    </div>
+</section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-success text-white text-center p-3 mt-5">
+    <p>&copy; 2025 - Sitio creado para el parcial de HTML y CSS de Bugnoni Magalí</p>
+    <p>
+      Seguime en:
+      <a href="#" class="text-white ms-2"><i class="bi bi-instagram"></i></a>
+      <a href="#" class="text-white ms-2"><i class="bi bi-facebook"></i></a>
+    </p>
+  </footer>
+
+  <!-- BOTÓN WHATSAPP -->
+  <a href="https://wa.me/5491123456789" target="_blank" class="btn btn-success position-fixed bottom-0 start-0 m-4 shadow" aria-label="WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+
+  <!-- BOTÓN ARRIBA -->
+  <a href="#" class="btn btn-secondary position-fixed bottom-0 end-0 m-4 shadow" aria-label="Volver arriba">
+    <i class="bi bi-arrow-up"></i>
+  </a>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
